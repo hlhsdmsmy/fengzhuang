@@ -9,49 +9,49 @@
 </head>
 <script>
 //  1.选择排序
-//    let paixu=function(arr,type='asc'){
-//        for(let i=0;i<arr.length;i++){
-//            for(let j=i+1;j<arr.length;j++){
-//                let ted=arr[i];
-//                if(type=='asc'){
-//                    if(arr[i]<arr[j]){
-//                        arr[i]=arr[j];
-//                        arr[j]=ted;
-//                    }
-//                }else if(type=='desc'){
-//                    if(arr[i]>arr[j]){
-//                        arr[i]=arr[j];
-//                        arr[j]=ted;
-//                    }
-//                }
-//            }
-//        }
-//        console.log(arr)
-//    }
-//    paixu([1,10,5,4,6,3,7,5],'desc');
-//    2.冒泡排序
-//    let maopao=function(arr,type='asc'){
-//        for(let i=0;i<arr.length;i++){
-//            for(let j=0;j<arr.length-i-1;j++){
-//                let ted=arr[j];
-//                if(type=='asc'){
-//                    if(arr[j]<arr[j+1]){
-//                        arr[j]=arr[j+1];
-//                        arr[j+1]=ted;
-//                    }
-//                }else if(type=='desc'){
-//                    if(arr[j]>arr[j+1]){
-//                        arr[j]=arr[j+1];
-//                        arr[j+1]=ted;
-//                    }
-//                }
-//
-//            }
-//        }
-//        console.log(arr);
-//
-//    }
-//    maopao([1,9,5,4,1,3,7,5],'asc');
+   let paixu=function(arr,type='asc'){
+       for(let i=0;i<arr.length;i++){
+           for(let j=i+1;j<arr.length;j++){
+               let ted=arr[i];
+               if(type=='asc'){
+                   if(arr[i]<arr[j]){
+                       arr[i]=arr[j];
+                       arr[j]=ted;
+                   }
+               }else if(type=='desc'){
+                   if(arr[i]>arr[j]){
+                       arr[i]=arr[j];
+                       arr[j]=ted;
+                   }
+               }
+           }
+       }
+       console.log(arr)
+   }
+   paixu([1,10,5,4,6,3,7,5],'desc');
+   2.冒泡排序
+   let maopao=function(arr,type='asc'){
+       for(let i=0;i<arr.length;i++){
+           for(let j=0;j<arr.length-i-1;j++){
+               let ted=arr[j];
+               if(type=='asc'){
+                   if(arr[j]<arr[j+1]){
+                       arr[j]=arr[j+1];
+                       arr[j+1]=ted;
+                   }
+               }else if(type=='desc'){
+                   if(arr[j]>arr[j+1]){
+                       arr[j]=arr[j+1];
+                       arr[j+1]=ted;
+                   }
+               }
+
+           }
+       }
+       console.log(arr);
+
+   }
+   maopao([1,9,5,4,1,3,7,5],'asc');
 //    3.求二维数组中长度最长的数组
 //      let Max=function(arr){
 //          let max=arr[0]
